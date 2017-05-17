@@ -7,7 +7,7 @@ angular.module('chatroom').service('messageService', function($http){
 this.getMessages = function() {
     return $http({
         method: 'Get' ,
-        url : 'https://practiceapi.devmountain.com/api/chats'
+        url: 'https://practiceapi.devmountain.com/api/chats'
     
     });
 }
@@ -20,7 +20,7 @@ this.getMessages = function() {
     return $http({
       data: {message:parameter},
       method: 'Post',
-      url :  'https://practiceapi.devmountain.com/api/chats'
+      url : 'https://practiceapi.devmountain.com/api/chats'
 
     
   })
